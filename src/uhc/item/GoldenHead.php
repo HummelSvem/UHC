@@ -20,6 +20,7 @@ namespace uhc\item;
 use pocketmine\entity\Effect;
 use pocketmine\item\GoldenApple;
 use pocketmine\utils\TextFormat;
+use pocketmine\inventory\ShapedRecipe;
 
 class GoldenHead extends GoldenApple
 {
@@ -40,7 +41,7 @@ class GoldenHead extends GoldenApple
         return [
             Effect::getEffect(Effect::REGENERATION)->setAmplifier(1)->setDuration(20 * ($this->getDamage() == 1 ? 10 : 5)),
             Effect::getEffect(Effect::ABSORPTION)->setDuration(20 * 120)
-        ];
+
     }
 
     /**
